@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Title</title>
+    <title>Spin War - 2 Player Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the Game</h1>
-    <p>This is the main game interface.</p>
-    <script>
-        // Game logic goes here
-    </script>
+    <div class="container">
+        <h1>Spin War</h1>
+        <div class="info">
+            <div class="player-info">
+                <h2>Player 1 (Arrow Keys)</h2>
+                <p>Score: <span id="score1">0</span></p>
+            </div>
+            <div class="player-info">
+                <h2>Player 2 (WASD)</h2>
+                <p>Score: <span id="score2">0</span></p>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="1000" height="600"></canvas>
+        <div class="controls">
+            <p><strong>Player 1:</strong> Use Arrow Keys to Move</p>
+            <p><strong>Player 2:</strong> Use WASD Keys to Move</p>
+            <p>Press SPACE to Start/Reset Game</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
 </body>
 </html>
